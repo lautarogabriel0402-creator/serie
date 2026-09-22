@@ -1,0 +1,51 @@
+CÓMO AGREGAR TUS PROPIAS IMÁGENES DE LA SERIE
+================================================
+
+Poné tus archivos DENTRO de esta carpeta "imagenes" con el nombre EXACTO
+que te indico abajo (respetando mayúsculas/minúsculas y guiones). Apenas
+el archivo exista con ese nombre, va a aparecer solo en el sitio. Si el
+archivo no existe, el sitio sigue funcionando normalmente (se ve la
+ilustración de reemplazo).
+
+Formato recomendado: .jpg (también funciona .png o .webp, pero ahí tenés
+que ir al archivo .html correspondiente y cambiar la extensión ".jpg"
+por la que corresponda en el "src" de esa imagen).
+
+
+1) HOME — index.html
+   - hero.jpg            → fondo grande de toda la portada (1920x1080 aprox.)
+   - hero-figura.jpg      → la imagen chica al lado del título, donde antes
+                            estaba la silueta ilustrada entre rejas
+                            (vertical, aprox. 320x380 / relación 4:5)
+
+2) SINOPSIS — sinopsis.html
+   - sinopsis-fondo.jpg  → fondo de la franja de arriba (1920x900 aprox.)
+   - temporada-1.jpg  ...  temporada-5.jpg → una por tarjeta de temporada
+     (horizontal, aprox. 1600x1000)
+
+3) PERSONAJES — personajes.html y cada ficha individual
+   - personaje-pastor.jpg
+   - personaje-diosito.jpg
+   - personaje-mario.jpg
+   - personaje-antin.jpg
+   (cuadradas, aprox. 800x800 — se usan tanto en la mini ficha como en la
+   ficha grande de cada personaje)
+
+4) GALERÍA — galeria.html
+   - galeria-rejas.jpg
+   - galeria-pabellon.jpg
+   - galeria-patio.jpg
+   - galeria-torre.jpg
+   - galeria-silueta.jpg
+   - galeria-ronda.jpg
+   (horizontales 4:3, aprox. 1200x900)
+
+
+IMPORTANTE SOBRE DERECHOS DE AUTOR
+-----------------------------------
+Las imágenes oficiales de "El Marginal" (fotogramas, afiches, fotos de
+los actores) son propiedad de Underground / Netflix y tienen derechos de
+autor. Si el sitio es solo para practicar o para entregar un trabajo,
+usar capturas de la serie suele ser aceptable como uso educativo. Si en
+algún momento lo vas a publicar en internet de forma pública, mejor usar
+fotos propias o con licencia libre.
