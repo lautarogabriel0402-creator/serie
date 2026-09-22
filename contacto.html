@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Contacto — El Marginal</title>
+<meta name="description" content="Formulario de contacto del sitio de fans de El Marginal." />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%E2%9B%93%EF%B8%8F%3C/text%3E%3C/svg%3E" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=PT+Serif:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<header class="encabezado">
+  <div class="barra-nav">
+    <a href="index.html" class="marca"><span>EL MARGINAL</span><small>sitio de fans · no oficial</small></a>
+    <button class="boton-menu" aria-label="Abrir menú" aria-expanded="false"><span></span><span></span><span></span></button>
+    <nav class="nav-principal" aria-label="Principal">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="sinopsis.html">Sinopsis</a></li>
+        <li class="tiene-submenu">
+          <a href="personajes.html">Personajes</a>
+          <ul class="submenu">
+            <li><a href="personajes-pastor.html"><small>Miguel Palacios</small>Pastor</a></li>
+            <li><a href="personajes-diosito.html"><small>Hermanos Borges</small>Diosito</a></li>
+            <li><a href="personajes-mario.html"><small>Hermanos Borges</small>Mario Borges</a></li>
+            <li><a href="personajes-antin.html"><small>Director del penal</small>Antín</a></li>
+          </ul>
+        </li>
+        <li><a href="galeria.html">Galería</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="banner-pagina">
+    <div class="hero-fondo">
+      <img src="imagenes/contacto-fondo.jpg" alt="" onload="this.style.opacity=1" onerror="this.remove()" />
+    </div>
+    <div class="contenedor banner-contenido">
+      <div class="cabecera-seccion" style="margin-bottom:0;">
+        <span class="eyebrow">Escribinos</span>
+        <h1 style="font-size:clamp(2.2rem,4.5vw,3.2rem);">Contacto</h1>
+        <p class="tenue">¿Encontraste un error en alguna ficha, querés proponer contenido para la galería o simplemente contarnos qué te pareció el sitio? Dejanos tu mensaje.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="seccion">
+    <div class="contenedor">
+      <div class="envoltorio-contacto">
+        <div class="info-contacto">
+          <div class="item">
+            <span>Sobre este sitio</span>
+            <p style="margin:0;">Proyecto de fans, hecho con fines ilustrativos. No es un canal oficial de la serie ni de sus productoras.</p>
+          </div>
+          <div class="item">
+            <span>Tiempo de respuesta</span>
+            <p style="margin:0;">Este formulario es una <strong>demostración de front-end</strong>: valida los datos, pero no envía el mensaje a ningún servidor real.</p>
+          </div>
+          <div class="item">
+            <span>Otras secciones</span>
+            <p style="margin:0;"><a href="galeria.html" style="color:var(--baliza);text-decoration:none;">Ver la galería</a> · <a href="personajes.html" style="color:var(--baliza);text-decoration:none;">Ver personajes</a></p>
+          </div>
+        </div>
+
+        <div>
+          <form class="formulario" novalidate>
+            <div class="campo">
+              <label for="nombre">Nombre</label>
+              <input type="text" id="nombre" name="nombre" required minlength="2" placeholder="Tu nombre" />
+              <span class="error-campo">Contanos cómo te llamás (mínimo 2 caracteres).</span>
+            </div>
+
+            <div class="campo">
+              <label for="email">Correo electrónico</label>
+              <input type="email" id="email" name="email" required placeholder="vos@correo.com" />
+              <span class="error-campo">Revisá el formato del correo.</span>
+            </div>
+
+            <div class="campo">
+              <label for="asunto">Asunto</label>
+              <select id="asunto" name="asunto" required>
+                <option value="">Elegí una opción</option>
+                <option value="Consulta general">Consulta general</option>
+                <option value="Error en el sitio">Reportar un error en el sitio</option>
+                <option value="Propuesta para la galería">Propuesta para la galería</option>
+                <option value="Prensa">Prensa</option>
+                <option value="Otro">Otro</option>
+              </select>
+              <span class="error-campo">Elegí un asunto de la lista.</span>
+            </div>
+
+            <div class="campo">
+              <label for="mensaje">Mensaje</label>
+              <textarea id="mensaje" name="mensaje" required minlength="10" placeholder="Escribí tu mensaje acá..."></textarea>
+              <span class="error-campo">El mensaje necesita al menos 10 caracteres.</span>
+            </div>
+
+            <div class="campo campo-check">
+              <input type="checkbox" id="terminos" name="terminos" required />
+              <label for="terminos" style="margin:0;text-transform:none;font-family:var(--cuerpo);letter-spacing:0;">Entiendo que este es un sitio de fans y que el formulario es una demostración sin envío real.</label>
+            </div>
+
+            <button type="submit" class="boton solido">Enviar mensaje</button>
+            <p class="nota-form">Los datos se guardan únicamente en tu navegador, a modo de ejemplo, y no se comparten con nadie.</p>
+          </form>
+
+          <div class="confirmacion">
+            <svg class="marca-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="10"/><path d="M8 12.5l2.5 2.5L16 9"/></svg>
+            <h3>Mensaje recibido</h3>
+            <p class="tenue">Gracias por escribir. Como este formulario no tiene backend real, tu mensaje quedó guardado sólo en este navegador, a modo de demostración.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="pie">
+  <div class="contenedor">
+    <div class="pie-grilla">
+      <div class="pie-columna">
+        <h4>Mapa del sitio</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="sinopsis.html">Sinopsis</a></li>
+          <li><a href="personajes.html">Personajes</a></li>
+          <li><a href="galeria.html">Galería</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+      <div class="pie-columna">
+        <h4>Personajes</h4>
+        <ul>
+          <li><a href="personajes-pastor.html">Pastor</a></li>
+          <li><a href="personajes-diosito.html">Diosito</a></li>
+          <li><a href="personajes-mario.html">Mario Borges</a></li>
+          <li><a href="personajes-antin.html">Antín</a></li>
+        </ul>
+      </div>
+      <div class="pie-columna">
+        <h4>Sobre este sitio</h4>
+        <ul>
+          <li><a href="contacto.html">Escribinos</a></li>
+        </ul>
+        <div class="redes-sociales">
+          <a href="https://instagram.com/" target="_blank" rel="noopener" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.3" cy="6.7" r="0.9" fill="currentColor" stroke="none"/></svg>
+          </a>
+          <a href="https://facebook.com/" target="_blank" rel="noopener" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M13.6 20.6v-6.9h2.1l.3-2.6h-2.4V9.4c0-.7.2-1.2 1.3-1.2h1.3V5.9c-.2 0-1-.1-1.9-.1-1.9 0-3.1 1.1-3.1 3.2v2.1H9v2.6h2.2v6.9" fill="currentColor" stroke="none"/></svg>
+          </a>
+          <a href="https://wa.me/" target="_blank" rel="noopener" aria-label="WhatsApp">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M6.1 18.6 4.5 21l2.5-1.3a8 8 0 1 0-2.9-2.9Z"/><path d="M8.7 9.6c.2-.5.4-.5.6-.5h.5c.2 0 .4 0 .5.4l.7 1.7c.1.2 0 .4-.1.6l-.5.6c-.1.2-.1.3 0 .5.4.7 1.4 1.7 2.1 2.1.2.1.3.1.5 0l.6-.5c.2-.1.4-.2.6-.1l1.7.7c.3.1.4.3.4.5v.5c0 .2 0 .4-.5.6-.8.4-1.8.4-3.1-.2-1.6-.8-3-2.2-3.8-3.8-.6-1.3-.6-2.3-.2-3.1Z" fill="currentColor" stroke="none"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+    <p class="pie-legal">Este es un sitio hecho por fans, con fines ilustrativos, no oficial ni afiliado a Underground, Netflix ni a los titulares de "El Marginal". Las imágenes de la galería son ilustraciones originales inspiradas en la estética de la serie, no fotogramas ni material oficial.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

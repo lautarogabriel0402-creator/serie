@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Galería — El Marginal</title>
+<meta name="description" content="Galería de ilustraciones originales inspiradas en la estética de El Marginal, con filtros y vista ampliada." />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%E2%9B%93%EF%B8%8F%3C/text%3E%3C/svg%3E" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=PT+Serif:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<header class="encabezado">
+  <div class="barra-nav">
+    <a href="index.html" class="marca"><span>EL MARGINAL</span><small>sitio de fans · no oficial</small></a>
+    <button class="boton-menu" aria-label="Abrir menú" aria-expanded="false"><span></span><span></span><span></span></button>
+    <nav class="nav-principal" aria-label="Principal">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="sinopsis.html">Sinopsis</a></li>
+        <li class="tiene-submenu">
+          <a href="personajes.html">Personajes</a>
+          <ul class="submenu">
+            <li><a href="personajes-pastor.html"><small>Miguel Palacios</small>Pastor</a></li>
+            <li><a href="personajes-diosito.html"><small>Hermanos Borges</small>Diosito</a></li>
+            <li><a href="personajes-mario.html"><small>Hermanos Borges</small>Mario Borges</a></li>
+            <li><a href="personajes-antin.html"><small>Director del penal</small>Antín</a></li>
+          </ul>
+        </li>
+        <li><a href="galeria.html">Galería</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="seccion" style="padding-top:56px;">
+    <div class="contenedor">
+      <div class="cabecera-seccion">
+        <span class="eyebrow">Estética del penal</span>
+        <h1 style="font-size:clamp(2.2rem,4.5vw,3.2rem);">Galería</h1>
+        <p class="tenue">Seis ilustraciones originales, hechas para este sitio, inspiradas en el clima visual de la serie: sin fotogramas ni imágenes oficiales. Filtrá por categoría o abrí cualquier pieza para verla en grande.</p>
+      </div>
+
+      <div class="filtros-galeria" role="tablist" aria-label="Filtrar galería">
+        <button class="filtro activo" data-filtro="todas">Todas</button>
+        <button class="filtro" data-filtro="escenarios">Escenarios</button>
+        <button class="filtro" data-filtro="personajes">Personajes</button>
+        
+      </div>
+
+      <div class="grilla-galeria">
+
+        <!-- 1 -->
+        <button class="pieza-galeria" data-categoria="escenarios" data-titulo="Rejas al amanecer" data-descripcion="La luz entra en franjas rectas entre los barrotes del pabellón, la única puntualidad que se respeta ahí adentro.">
+          <div class="marco">
+            <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+              <rect width="400" height="300" fill="#241f17" />
+              <polygon points="0,300 400,0 400,90 0,300" fill="#c9a227" opacity="0.18" />
+              <g stroke="#100f0d" stroke-width="16">
+                <line x1="40" y1="0" x2="40" y2="300" />
+                <line x1="110" y1="0" x2="110" y2="300" />
+                <line x1="180" y1="0" x2="180" y2="300" />
+                <line x1="250" y1="0" x2="250" y2="300" />
+                <line x1="320" y1="0" x2="320" y2="300" />
+                <line x1="390" y1="0" x2="390" y2="300" />
+              </g>
+              <line x1="0" y1="60" x2="400" y2="60" stroke="#100f0d" stroke-width="14" />
+            </svg>
+
+            <img class="foto-real" src="imagenes/galeria-rejas.jpg" alt="" onload="this.style.opacity=1" onerror="this.remove()" />
+          </div>
+          <div class="pie"><div class="titulo">Rejas al amanecer</div><div class="cat">Escenarios</div></div>
+        </button>
+
+        <!-- 2 -->
+        <button class="pieza-galeria" data-categoria="escenarios" data-titulo="Pabellón central" data-descripcion="Un pasillo largo, puertas iguales a los costados, y el eco de pasos que nunca se sabe bien de dónde vienen.">
+          <div class="marco">
+            <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+              <rect width="400" height="300" fill="#1b1a17" />
+              <polygon points="150,0 250,0 400,300 0,300" fill="#3c3a34" />
+              <polygon points="170,0 230,0 320,300 80,300" fill="#2b2a26" />
+              <g fill="none" stroke="#100f0d" stroke-width="4">
+                <rect x="60" y="150" width="30" height="80" />
+                <rect x="120" y="140" width="26" height="75" />
+                <rect x="255" y="140" width="26" height="75" />
+                <rect x="310" y="150" width="30" height="80" />
+              </g>
+              <circle cx="200" cy="30" r="14" fill="#c9a227" opacity="0.5" />
+            </svg>
+
+            <img class="foto-real" src="imagenes/galeria-pabellon.jpg" alt="" onload="this.style.opacity=1" onerror="this.remove()" />
+          </div>
+          <div class="pie"><div class="titulo">Pabellón central</div><div class="cat">Escenarios</div></div>
+        </button>
+
+        <!-- 3 -->
+        <button class="pieza-galeria" data-categoria="escenarios" data-titulo="Patio de recreo" data-descripcion="Cemento, sol de mediodía y un alambrado que separa el cielo del resto del mundo.">
+          <div class="marco">
+            <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+              <rect width="400" height="300" fill="#2b2a26" />
+              <rect y="220" width="400" height="80" fill="#3c3a34" />
+              <g stroke="#100f0d" stroke-width="2" opacity="0.6">
+                <line x1="0" y1="240" x2="400" y2="240" />
+                <line x1="0" y1="270" x2="400" y2="270" />
+                <line x1="80" y1="220" x2="80" y2="300" />
+                <line x1="200" y1="220" x2="200" y2="300" />
+                <line x1="320" y1="220" x2="320" y2="300" />
+              </g>
+              <g stroke="#5c6b4f" stroke-width="3">
+                <line x1="0" y1="60" x2="400" y2="60" />
+                <line x1="0" y1="60" x2="40" y2="20" />
+                <line x1="60" y1="60" x2="100" y2="20" />
+                <line x1="120" y1="60" x2="160" y2="20" />
+                <line x1="180" y1="60" x2="220" y2="20" />
+                <line x1="240" y1="60" x2="280" y2="20" />
+                <line x1="300" y1="60" x2="340" y2="20" />
+                <line x1="360" y1="60" x2="400" y2="20" />
+              </g>
+            </svg>
+
+            <img class="foto-real" src="imagenes/galeria-patio.jpg" alt="" onload="this.style.opacity=1" onerror="this.remove()" />
+          </div>
+          <div class="pie"><div class="titulo">Patio de recreo</div><div class="cat">Escenarios</div></div>
+        </button>
+
+        <!-- 4 -->
+        <button class="pieza-galeria" data-categoria="escenarios" data-titulo="Torre de vigilancia" data-descripcion="Desde ahí arriba se ve todo el penal. O eso quieren hacer creer.">
+          <div class="marco">
+            <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+              <rect width="400" height="300" fill="#1b1a17" />
+              <radialGradient id="cieloTorre" cx="50%" cy="20%" r="80%">
+                <stop offset="0%" stop-color="#c9a227" stop-opacity="0.25" />
+                <stop offset="100%" stop-color="#1b1a17" stop-opacity="0" />
+              </radialGradient>
+              <rect width="400" height="300" fill="url(#cieloTorre)" />
+              <polygon points="170,300 190,120 210,120 230,300" fill="#100f0d" />
+              <rect x="160" y="80" width="80" height="46" fill="#100f0d" />
+              <rect x="176" y="94" width="18" height="18" fill="#c9a227" opacity="0.7" />
+              <rect x="206" y="94" width="18" height="18" fill="#c9a227" opacity="0.35" />
+              <line x1="150" y1="300" x2="250" y2="300" stroke="#100f0d" stroke-width="10" />
+            </svg>
+
+            <img class="foto-real" src="imagenes/galeria-torre.jpg" alt="" onload="this.style.opacity=1" onerror="this.remove()" />
+          </div>
+          <div class="pie"><div class="titulo">Torre de vigilancia</div><div class="cat">Escenarios</div></div>
+        </button>
+
+        <!-- 5 -->
+        <button class="pieza-galeria" data-categoria="personajes" data-titulo="Silueta tras las rejas" data-descripcion="Una figura sin nombre todavía, apoyada contra los barrotes, esperando que pase algo o que no pase nada.">
+          <div class="marco">
+            <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+              <rect width="400" height="300" fill="#241f17" />
+              <circle cx="180" cy="130" r="46" fill="#0d0c0a" />
+              <path d="M110 300c0-80 30-120 70-120s70 40 70 120Z" fill="#0d0c0a" />
+              <g stroke="#c9a227" stroke-width="10" opacity="0.9">
+                <line x1="40" y1="0" x2="40" y2="300" />
+                <line x1="100" y1="0" x2="100" y2="300" />
+                <line x1="160" y1="0" x2="160" y2="300" />
+                <line x1="220" y1="0" x2="220" y2="300" />
+                <line x1="280" y1="0" x2="280" y2="300" />
+                <line x1="340" y1="0" x2="340" y2="300" />
+              </g>
+            </svg>
+
+            <img class="foto-real" src="imagenes/galeria-silueta.jpg" alt="" onload="this.style.opacity=1" onerror="this.remove()" />
+          </div>
+          <div class="pie"><div class="titulo">Silueta tras las rejas</div><div class="cat">Personajes</div></div>
+        </button>
+
+        <!-- 6 -->
+        <button class="pieza-galeria" data-categoria="personajes" data-titulo="Ronda nocturna" data-descripcion="Dos siluetas caminan por el pasillo. En San Onofre casi nadie camina solo.">
+          <div class="marco">
+            <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+              <rect width="400" height="300" fill="#1b1a17" />
+              <circle cx="140" cy="150" r="30" fill="#3c3a34" />
+              <path d="M90 300c0-60 22-92 50-92s50 32 50 92Z" fill="#3c3a34" />
+              <circle cx="250" cy="160" r="26" fill="#2b2a26" />
+              <path d="M210 300c0-52 18-80 40-80s40 28 40 80Z" fill="#2b2a26" />
+              <ellipse cx="195" cy="290" rx="160" ry="12" fill="#100f0d" opacity="0.6" />
+            </svg>
+
+            <img class="foto-real" src="imagenes/galeria-ronda.jpg" alt="" onload="this.style.opacity=1" onerror="this.remove()" />
+          </div>
+          <div class="pie"><div class="titulo">Ronda nocturna</div><div class="cat">Personajes</div></div>
+        </button>
+
+
+      </div>
+    </div>
+  </section>
+</main>
+
+<div class="lightbox">
+  <div class="lightbox-caja">
+    <button class="lightbox-cerrar" aria-label="Cerrar">✕</button>
+    <div class="lightbox-imagen"></div>
+    <div class="lightbox-info">
+      <div>
+        <h3 class="lightbox-titulo" style="margin-bottom:2px;"></h3>
+        <p class="lightbox-descripcion"></p>
+      </div>
+      <div class="lightbox-controles">
+        <button class="lightbox-anterior" aria-label="Anterior">←</button>
+        <button class="lightbox-siguiente" aria-label="Siguiente">→</button>
+      </div>
+    </div>
+    <div style="padding:0 26px 18px;" class="tenue lightbox-contador"></div>
+  </div>
+</div>
+
+<footer class="pie">
+  <div class="contenedor">
+    <div class="pie-grilla">
+      <div class="pie-columna">
+        <h4>Mapa del sitio</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="sinopsis.html">Sinopsis</a></li>
+          <li><a href="personajes.html">Personajes</a></li>
+          <li><a href="galeria.html">Galería</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+      <div class="pie-columna">
+        <h4>Personajes</h4>
+        <ul>
+          <li><a href="personajes-pastor.html">Pastor</a></li>
+          <li><a href="personajes-diosito.html">Diosito</a></li>
+          <li><a href="personajes-mario.html">Mario Borges</a></li>
+          <li><a href="personajes-antin.html">Antín</a></li>
+        </ul>
+      </div>
+      <div class="pie-columna">
+        <h4>Sobre este sitio</h4>
+        <ul>
+          <li><a href="contacto.html">Escribinos</a></li>
+        </ul>
+        <div class="redes-sociales">
+          <a href="https://instagram.com/" target="_blank" rel="noopener" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.3" cy="6.7" r="0.9" fill="currentColor" stroke="none"/></svg>
+          </a>
+          <a href="https://facebook.com/" target="_blank" rel="noopener" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M13.6 20.6v-6.9h2.1l.3-2.6h-2.4V9.4c0-.7.2-1.2 1.3-1.2h1.3V5.9c-.2 0-1-.1-1.9-.1-1.9 0-3.1 1.1-3.1 3.2v2.1H9v2.6h2.2v6.9" fill="currentColor" stroke="none"/></svg>
+          </a>
+          <a href="https://wa.me/" target="_blank" rel="noopener" aria-label="WhatsApp">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M6.1 18.6 4.5 21l2.5-1.3a8 8 0 1 0-2.9-2.9Z"/><path d="M8.7 9.6c.2-.5.4-.5.6-.5h.5c.2 0 .4 0 .5.4l.7 1.7c.1.2 0 .4-.1.6l-.5.6c-.1.2-.1.3 0 .5.4.7 1.4 1.7 2.1 2.1.2.1.3.1.5 0l.6-.5c.2-.1.4-.2.6-.1l1.7.7c.3.1.4.3.4.5v.5c0 .2 0 .4-.5.6-.8.4-1.8.4-3.1-.2-1.6-.8-3-2.2-3.8-3.8-.6-1.3-.6-2.3-.2-3.1Z" fill="currentColor" stroke="none"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+    <p class="pie-legal">Este es un sitio hecho por fans, con fines ilustrativos, no oficial ni afiliado a Underground, Netflix ni a los titulares de "El Marginal". Las imágenes de la galería son ilustraciones originales inspiradas en la estética de la serie.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
